@@ -1,5 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
-   
+    <div class="info">
+        Para quem não conhece, Black Clover é uma série de história bastante comum, sem muitos pontos de originalidade. O protagonista da trama é o jovem Asta, um órfão criado em um orfanato. Este é um mundo de magia, mas Asta não tem qualquer habilidade mágica, ao contrário de seu irmão Yuno
+    </div>
+
+    <div class="cipher-container">
+
+    <a href="/encode">
+        <div class="cipher-container-item">
+            <img class="cipher-image" src="{{ url_for('static', filename='images/lock.png')}}">
+        </div>
+    </a>
+    <a href="/decode"></a>
+    </div>
 {% endblock %}
