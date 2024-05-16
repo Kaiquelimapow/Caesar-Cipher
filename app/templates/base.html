@@ -12,7 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>  
+<body> 
+    <span class="flask-message">
+        {% for message in get_flashed_messages() %}
+            <div class="alert">{{ message }}</div>
+        {% endfor %}
+
+    </span> 
     <header class="header-container">
         <img class="header-logo" src="{{ url_for('static', filename='images/logo.jpg') }}">
     </header>
